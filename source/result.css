@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.totalCredits,
+.gradeRatio,
+.RequiredChangeList,
+.semesterGPA,
+.uncompletedCourses,
+.RecommendedList,
+.intro,
+.chapelCount,
+.GraduationRequirements {
+    border: 1px solid #999EA4;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sec1 {
+    background-color: bisque;
+}
+
+.sec2 {
+    background-color: pink;
+}
+
+.sec3 {
+    background-color: palegoldenrod;
+}
+
+
+/* section 1 */
+
+.gradeRatio {
+    height: 350px;
+}

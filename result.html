@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./source/boot-5.3.0/bootstrap.min.css">
-    <link rel="stylesheet" href="./source/style.css">
+    <link rel="stylesheet" href="./source/result.css">
     <title>졸업학점계산기 분석결과</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row align-items-start">
+            <!-- Section1 -->
+            <section class="sec1 col-md-3">
+                <!-- 총 이수 학점 -->
+                <div class="totalCredits">
+                    <div>
+                        <span class="title">총 이수 학점</span><br />
+                        <span class="fs-4 fw-bold"> ??? / 123점</span>
+                    </div>
+                    <hr />
+                    <div>
+                        <span class="title">이수 학점</span>
+                    </div>
+                </div>
+                <!-- 성적 비율 (시은 담당) -->
+                <div class="gradeRatio">
+                    <div class="title">성적 비율</div>
+                </div>
+                <!-- 이수구분변경 필요 리스트 -->
+                <div class="RequiredChangeList">
+                    <div class="title">이수구분변경 필요 리스트</div>
+                </div>
+            </section>
+            <!-- Section2 -->
+            <section class="sec2 col-md-7">
+                <div class="semesterGPA">
+                    <div class="title">학기별 성적 평점</div>
+                </div>
+                <div class="uncompletedCourses">
+                    <div class="title">미수강 과목</div>
+                </div>
+                <div class="RecommendedList">
+                    <div class="title">재수강 추천 리스트</div>
+                </div>
+            </section>
+            <!-- Section3 -->
+            <section class="sec3 col-md-2">
+                <div class="intro">
+                    <div class="title">홍길동님</div>
+                </div>
+                <div class="chapelCount">
+                    <div class="title">채플 카운트</div>
+                </div>
+                <div class="GraduationRequirements">
+                    <div class="title">졸업 요구사항</div>
+                </div>
+            </section>
+        </div>
+    </div>
     <script src="./source/boot-5.3.0/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
