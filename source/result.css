@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pretendard {
+    font-family: 'Pretendard-Regular';
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
 }
 
 .totalCredits,
@@ -31,4 +43,25 @@
 
 .gradeRatio {
     height: 350px;
+}
+
+
+/* section 3*/
+
+.id,
+.grade,
+.majorDeep {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.clear button {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 12px;
 }
