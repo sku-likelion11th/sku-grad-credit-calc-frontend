@@ -19,23 +19,15 @@
 
 .title {
     font-weight: bold;
-    font-size: 14px;
-}
-
-.sec1 {
-    background-color: bisque;
-}
-
-.sec2 {
-    background-color: pink;
-}
-
-.sec3 {
-    background-color: palegoldenrod;
+    font-size: 17px;
 }
 
 
 /* section 1 */
+
+.score {
+    font-size: 12px;
+}
 
 .gradeRatio {
     height: 350px;
