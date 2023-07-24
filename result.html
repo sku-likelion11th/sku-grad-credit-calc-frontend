@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./source/boot-5.3.0/bootstrap.min.css">
     <link rel="stylesheet" href="./source/result.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>졸업학점계산기 분석결과</title>
 </head>
 
@@ -77,6 +78,9 @@
                 <!-- 이수구분변경 필요 리스트 -->
                 <div class="RequiredChangeList">
                     <div class="title">이수구분변경 필요 리스트</div>
+                    <ul>
+                        <li>제품기획및개발(전선) <i class="bi bi-caret-right-fill"></i> 제품기획및개발(전필)</li>
+                    </ul>
                 </div>
             </section>
             <!-- Section2 -->
@@ -85,7 +89,14 @@
                     <div class="title">학기별 성적 평점</div>
                 </div>
                 <div class="uncompletedCourses">
-                    <div class="title">미수강 과목</div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="title mb-0">미수강 과목</div>
+                        <div class="uncompleteBtn">
+                            <button id="majorRequirements">전공필수</button>
+                            <button id="majorSelect">전공선택</button>
+                            <button id="generalrequirements">교양필수</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="RecommendedList">
                     <div class="title">재수강 추천 리스트</div>
@@ -93,6 +104,7 @@
             </section>
             <!-- Section3 -->
             <section class="sec3 col-md-2">
+                <!-- 정보 -->
                 <div class="intro">
                     <span class="fw-bold">홍길동</span>님<br/>
                     <span class="id">20200977</span>
@@ -105,12 +117,21 @@
                         <button>데이터 파기하기</button>
                     </div>
                 </div>
+                <!-- 채플 카운트 -->
                 <div class="chapelCount">
                     <div class="title">채플 카운트</div>
                     <div class="fs-1 text-center fw-bold">? / 6</div>
                 </div>
+                <!-- 졸업 요구사항 -->
                 <div class="GraduationRequirements">
                     <div class="title">졸업 요구사항</div>
+                    <ul>
+                        <li>졸업작품</li>
+                        <li>졸업논문</li>
+                        <li>품질경영기사</li>
+                        <li>토익 800점 이상</li>
+                        <li>S-point 12포인트</li>
+                    </ul>
                 </div>
             </section>
         </div>

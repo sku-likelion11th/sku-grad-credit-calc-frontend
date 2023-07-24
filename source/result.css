@@ -32,6 +32,7 @@
 .title {
     font-weight: bold;
     font-size: 17px;
+    margin-bottom: 3px;
 }
 
 
@@ -45,6 +46,26 @@
     height: 350px;
 }
 
+.RequiredChangeList li {
+    font-size: 13px;
+}
+
+
+/* section 3*/
+
+.uncompleteBtn button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    margin: 0 2px;
+}
+
+.uncompleteBtn button:hover {
+    background-color: #0C76CC;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 /* section 3*/
 
@@ -53,6 +74,10 @@
 .majorDeep {
     font-size: 12px;
     font-weight: bold;
+}
+
+.majorDeep {
+    color: #5F5F5F;
 }
 
 .clear button {
@@ -64,4 +89,8 @@
     padding: 8px;
     font-weight: bold;
     font-size: 12px;
+}
+
+ul {
+    padding-left: 1.5rem;
 }
