@@ -74,6 +74,14 @@
     width: 300px;
     height: auto;
 }
+.profile-card {
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+.profile-card > img {
+    width: 150px;
+    height: auto;
+}
 .contact {
     background-color: #001D2D;
 }
