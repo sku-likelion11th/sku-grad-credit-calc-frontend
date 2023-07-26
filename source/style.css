@@ -1,9 +1,59 @@
 /* 공통 시작 */
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,800&display=swap');
+.kanit-font {
+    font-family: 'Kanit', sans-serif;
+}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.pretendard-font {
+    font-family: 'Pretendard';
+}
+.logo-sku-sku {
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+.divider {
+    font-size: 30px;
+    font-weight: 900;
+}
+.service-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+.menu {
+    font-size: 16px;
+    font-weight: 800;
+}
 /* 공통 끝 */
 
 /* 메인 시작 */
-
+.main {
+    background-image: url('./img/main_section_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 900px;
+}
+.main-text {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.main-calc-btn {
+    font-size: 18px;
+    border-radius: 20px;
+    background: #059BDE;
+    border: none;
+}
+.main-maker-btn {
+    font-size: 18px;
+    border-radius: 20px;
+    background: none;
+    border: 1px solid #ffffff;
+}
+.main-content {
+    padding: 150px 0;
+}
 /* 메인 끝 */
 
 /* 파일업로드 시작 */
