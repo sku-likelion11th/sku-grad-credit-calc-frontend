@@ -94,3 +94,36 @@
 ul {
     padding-left: 1.5rem;
 }
+
+
+/* 미수강과목 */
+
+th,
+td {
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+}
+
+tr {
+    border-bottom: 1px solid rgb(95, 95, 95, 0.5);
+}
+
+tbody tr:last-child {
+    border: none;
+}
+
+thead {
+    color: #5F5F5F;
+}
+
+.uncompletedCoursesTable tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.uncompletedCoursesTable {
+    width: 90%;
+    margin: 20px auto;
+}

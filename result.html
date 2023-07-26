@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./source/result.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>졸업학점계산기 분석결과</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -91,12 +92,45 @@
                 <div class="uncompletedCourses">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="title mb-0">미수강 과목</div>
+                        <!-- button -->
                         <div class="uncompleteBtn">
-                            <button id="majorRequirements">전공필수</button>
-                            <button id="majorSelect">전공선택</button>
-                            <button id="generalrequirements">교양필수</button>
+                            <button id="majorRequirementsbtn">전공필수</button>
+                            <button id="majorSelectbtn">전공선택</button>
+                            <button id="generalrequirementsbtn">교양필수</button>
                         </div>
                     </div>
+
+                    <table class="text-center uncompletedCoursesTable">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>과목명</th>
+                                <th>학점</th>
+                            </tr>
+                        </thead>
+                        <!-- 전필 -->
+                        <tbody id="majorRequirements">
+
+                        </tbody>
+                        <!-- 전선 -->
+                        <tbody id="majorSelect">
+
+                        </tbody>
+                        <!-- 교필 -->
+                        <tbody id="generalrequirements">
+
+                        </tbody>
+                    </table>
+
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-sm justify-content-center">
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="RecommendedList">
                     <div class="title">재수강 추천 리스트</div>
@@ -137,6 +171,7 @@
         </div>
     </div>
     <script src="./source/boot-5.3.0/bootstrap.bundle.min.js"></script>
+    <script src="./result.js"></script>
 </body>
 
 </html>
