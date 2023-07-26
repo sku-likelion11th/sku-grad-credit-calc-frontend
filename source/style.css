@@ -74,3 +74,19 @@
     width: 300px;
     height: auto;
 }
+.contact {
+    background-color: #001D2D;
+}
+.contact-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+.contact-icon{
+    width: 50px;
+    height: auto;
+}
+.copyright {
+    color: #C3C3C3;
+    font-weight: 700;
+    font-size: 20px;
+}
