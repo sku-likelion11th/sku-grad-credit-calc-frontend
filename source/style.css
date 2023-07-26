@@ -1,5 +1,8 @@
 /* 공통 시작 */
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+.kanit-font {
+    font-family: 'Kanit', sans-serif;
+}
 /* 공통 끝 */
 
 /* 메인 시작 */
