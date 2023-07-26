@@ -55,12 +55,22 @@
     font-size: 30px;
     font-weight: 700;
     color: #069BDF;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 .section-text {
     font-family: 'Pretendard';
     font-weight: 700;
     font-size: 50px;
     line-height: 120%;
+}
+.preview-img {
+    margin-top: 200px;
+}
+.collabo-section {
+    background-color: #F9FAFB;
+}
+.collabo-team {
+    width: 300px;
+    height: auto;
 }
