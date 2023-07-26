@@ -20,19 +20,39 @@
     font-size: 16px;
     font-weight: 700;
 }
-.menu{
+.menu {
     font-size: 16px;
     font-weight: 800;
 }
 /* 공통 끝 */
 
 /* 메인 시작 */
-.main{
+.main {
     background-image: url('./img/main_section_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    height: 800px;
+    height: 900px;
+}
+.main-text {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.main-calc-btn {
+    font-size: 18px;
+    border-radius: 20px;
+    background: #059BDE;
+    border: none;
+}
+.main-maker-btn {
+    font-size: 18px;
+    border-radius: 20px;
+    background: none;
+    border: 1px solid #ffffff;
+}
+.main-content {
+    padding: 150px 0;
 }
 /* 메인 끝 */
 
