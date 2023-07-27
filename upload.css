@@ -155,8 +155,14 @@ hr {
     #uploadBtn {
       margin: -30px 0px 50px 0;
     }
+    .howuse-text {
+      font-size: 30px;
+    }
     .notice-sub-text {
       font-size: 15px;
+    }
+    .notice-text {
+      font-size: 30px;
     }
     .notice-sub-text li {
       line-height: 30px;
