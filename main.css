@@ -66,3 +66,56 @@
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.lottie-p {
+    width: 400px;
+    height: 400px;
+}
+
+/* Main 화면 모바일 반응형 CSS */
+@media (max-width: 575.98px) {
+    .main-text {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+    }
+    .main-sub-text{
+        font-size: 11px;
+        text-align: center;
+    }
+    .main-btn-group{
+        text-align: center;
+    }
+    .main {
+        background-image: url('./source/img/main_section_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 20% bottom;
+        height: 690px;
+    }
+    .section-name {
+        font-family: 'Pretendard';
+        font-size: 25px;
+        font-weight: 700;
+        color: #069BDF;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .section-text {
+        font-family: 'Pretendard';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+    }
+    .preview-img {
+        margin-top: 30px;
+    }
+    .collabo-team {
+        width: 150px;
+        height: auto;
+    }
+    .lottie-p{
+        width: 200px;
+        height: 200px;
+    }
+}
