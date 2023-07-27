@@ -167,13 +167,30 @@ table {
     font-weight: bold;
 }
 
-.uncompletedCourses {
+.uncompletedCourses,
+.RecommendedList {
     height: 360px;
     position: relative;
 }
 
-.pagination {
+.pagination,
+.paginationRe {
     position: absolute;
     bottom: 20px;
     left: 47%;
+}
+
+
+/* 재수강 추천리스트 */
+
+.RecommendedList table tr {
+    padding: 0 10px;
+}
+
+.RecommendedList table td:nth-child(2) {
+    width: 200px;
+}
+
+.RecommendedList table th:nth-child(2) {
+    width: 240px;
 }
