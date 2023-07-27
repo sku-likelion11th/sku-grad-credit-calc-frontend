@@ -134,3 +134,63 @@
         height: 200px;
     }
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main {
+        background-image: url('./source/img/main_section_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 20% bottom;
+        height: 900px;
+    }
+    .collabo-team {
+        width: 180px;
+        height: auto;
+    }
+    .lottie-p{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main {
+        background-image: url('./source/img/main_section_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 20% bottom;
+        height: 1000px;
+    }
+    .collabo-team {
+        width: 180px;
+        height: auto;
+    }
+    .lottie-p{
+        width: 250px;
+        height: 250px;
+    }
+    .section-name {
+        font-family: 'Pretendard';
+        font-size: 20px;
+        font-weight: 700;
+        color: #069BDF;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .section-text {
+        font-family: 'Pretendard';
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 120%;
+    }
+    .preview-img {
+        margin-top: 120px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main {
+        background-image: url('./source/img/main_section_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 20% bottom;
+        height: 900px;
+    }
+}
