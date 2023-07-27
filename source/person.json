@@ -1,6 +1,6 @@
 [{
         "id": 1,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/hyunjun.png",
         "name": "김현준",
         "department": "산업경영공학과 17",
         "position": "대표",
@@ -8,7 +8,7 @@
     },
     {
         "id": 2,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/youngmin.png",
         "name": "주영민",
         "department": "미디어소프트웨어학과 17",
         "position": "부대표",
@@ -16,7 +16,7 @@
     },
     {
         "id": 3,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/taekwon.png",
         "name": "정택원",
         "department": "컴퓨터공학과 19",
         "position": "운영진",
@@ -24,7 +24,7 @@
     },
     {
         "id": 4,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/seunghee.png",
         "name": "노승희",
         "department": "미디어소프트웨어학과 20",
         "position": "운영진",
