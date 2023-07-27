@@ -53,13 +53,13 @@
         font-style: italic;
     }
     .divider {
-        font-size: 30px;
-        font-weight: 700;
+        /* font-size: 30px;
+        font-weight: 700; */
         display: none;
     }
     .service-name {
-        font-size: 13px;
-        font-weight: 700;
+        /* font-size: 13px;
+        font-weight: 700; */
         display: none;
     }
     .contact-title {

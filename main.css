@@ -58,7 +58,22 @@
     width: 150px;
     height: auto;
 }
-
+.maker-name{
+    font-size: 22px;
+    font-weight: 600;
+}
+.maker-department {
+    font-size: 13px;
+    font-weight: 600;
+}
+.maker-position {
+    font-size: 18px;
+    font-weight: 600;
+}
+.maker-role {
+    font-size: 13px;
+    font-weight: 600;
+}
 /* 메인화면 navbar에서만 적용 */
 .navbar-toggler {
     border: 2px solid #ffffff;
