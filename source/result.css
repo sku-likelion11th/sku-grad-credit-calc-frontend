@@ -14,6 +14,10 @@
     font-family: 'Pretendard-Regular';
 }
 
+.allSection {
+    margin-bottom: 100px;
+}
+
 .totalCredits,
 .gradeRatio,
 .RequiredChangeList,
@@ -192,7 +196,15 @@ table {
 }
 
 .RecommendedList table th:nth-child(2) {
-    width: 240px;
+    width: 200px;
+}
+
+.RecommendedList table td:last-child {
+    width: 45px;
+}
+
+.RecommendedList table th:last-child {
+    width: 50px;
 }
 
 
