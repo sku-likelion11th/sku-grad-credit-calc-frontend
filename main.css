@@ -42,6 +42,8 @@
 }
 .preview-img {
     margin-top: 200px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .collabo-section {
     background-color: #F9FAFB;
@@ -53,6 +55,7 @@
 .profile-card {
     /* border: 2px solid #000000; */
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .profile-design-1 {
     background: linear-gradient(-45deg, #FCE38A, #F38181, #F54EA2, #FF7676);
