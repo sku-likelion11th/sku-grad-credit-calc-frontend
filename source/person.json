@@ -72,7 +72,7 @@
     },
     {
         "id": 10,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/sieun.png",
         "name": "박시은",
         "department": "경영학과 21",
         "position": "아기사자",
@@ -88,7 +88,7 @@
     },
     {
         "id": 12,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/mingyu.png",
         "name": "한민규",
         "department": "컴퓨터공학과 21",
         "position": "아기사자",
