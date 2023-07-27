@@ -17,7 +17,7 @@ body {
 }
 .howuse-text {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 800;
   padding-top: 24px;
   padding-bottom: 50px;
 }
@@ -30,6 +30,7 @@ body {
 }
 .step-text {
   font-size: 15px;
+  font-weight: 700;
 }
 .step > p {
   margin-top: 19.39px;
@@ -69,6 +70,7 @@ hr {
 }
 .btn-text {
   margin-right: 35px;
+  font-weight: 700;
 }
 .uploadBtn img {
   position: absolute;
@@ -83,11 +85,11 @@ hr {
 .notice-text {
   padding-top: 24px;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 800;
 }
 .notice-sub-text {
   font-size: 20px;
 }
 .notice-sub-text li {
-  margin-bottom: 4px;
+  line-height: 35px;
 }
