@@ -4,7 +4,8 @@
         "name": "김현준",
         "department": "산업경영공학과 17",
         "position": "대표",
-        "role": "기획/디자인/Front-end"
+        "role": "기획/디자인/Front-end",
+        "class": "profile-design-1"
     },
     {
         "id": 2,
@@ -12,7 +13,8 @@
         "name": "주영민",
         "department": "미디어소프트웨어학과 17",
         "position": "부대표",
-        "role": "Back-end"
+        "role": "Back-end",
+        "class": "profile-design-2"
     },
     {
         "id": 3,
@@ -20,7 +22,8 @@
         "name": "정택원",
         "department": "컴퓨터공학과 19",
         "position": "운영진",
-        "role": "Back-end"
+        "role": "Back-end",
+        "class": "profile-design-3"
     },
     {
         "id": 4,
@@ -28,7 +31,8 @@
         "name": "노승희",
         "department": "미디어소프트웨어학과 20",
         "position": "운영진",
-        "role": "Front-end"
+        "role": "Front-end",
+        "class": "profile-design-4"
     },
     {
         "id": 5,
@@ -36,7 +40,8 @@
         "name": "남민지",
         "department": "컴퓨터공학과 21",
         "position": "운영진",
-        "role": "Back-end"
+        "role": "Back-end",
+        "class": "profile-design-5"
     },
     {
         "id": 6,
@@ -44,7 +49,8 @@
         "name": "이원경",
         "department": "국어국문학과 22",
         "position": "운영진",
-        "role": "검수"
+        "role": "검수",
+        "class": "profile-design-1"
     },
     {
         "id": 7,
@@ -52,7 +58,8 @@
         "name": "나용성",
         "department": "컴퓨터공학과 18",
         "position": "아기사자",
-        "role": "아직 몰루"
+        "role": "아직 몰루",
+        "class": "profile-design-2"
     },
     {
         "id": 8,
@@ -60,7 +67,8 @@
         "name": "박하영",
         "department": "산업경영공학과 20",
         "position": "아기사자",
-        "role": "아직 몰루"
+        "role": "아직 몰루",
+        "class": "profile-design-3"
     },
     {
         "id": 9,
@@ -68,7 +76,8 @@
         "name": "박지은",
         "department": "미디어소프트웨어학과 20",
         "position": "아기사자",
-        "role": "아직 몰루"
+        "role": "아직 몰루",
+        "class": "profile-design-4"
     },
     {
         "id": 10,
@@ -76,7 +85,8 @@
         "name": "박시은",
         "department": "경영학과 21",
         "position": "아기사자",
-        "role": "디자인 / Front-end"
+        "role": "디자인 / Front-end",
+        "class": "profile-design-5"
     },
     {
         "id": 11,
@@ -84,7 +94,8 @@
         "name": "김주미",
         "department": "미디어소프트웨어학과 21",
         "position": "아기사자",
-        "role": "아직몰루"
+        "role": "아직몰루",
+        "class": "profile-design-1"
     },
     {
         "id": 12,
@@ -92,6 +103,7 @@
         "name": "한민규",
         "department": "컴퓨터공학과 21",
         "position": "아기사자",
-        "role": "아직몰루"
+        "role": "아직몰루",
+        "class": "profile-design-2"
     }
 ]

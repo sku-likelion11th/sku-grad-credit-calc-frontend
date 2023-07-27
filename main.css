@@ -51,8 +51,44 @@
     height: auto;
 }
 .profile-card {
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     border-radius: 30px;
+}
+.profile-design-1 {
+    background: linear-gradient(-45deg, #FCE38A, #F38181, #F54EA2, #FF7676);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+}
+.profile-design-2 {
+    background: linear-gradient(45deg, #17EAD9, #6078EA, #622774, #C53364);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+}
+.profile-design-3 {
+    background: linear-gradient(90deg, #7117EA, #EA6060, #42E695, #3BB2B8);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+}
+.profile-design-4 {
+    background: linear-gradient(-80deg, #F02FC2, #6094EA, #65799B, #5E2563);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+}
+.profile-design-5 {
+    background: linear-gradient(30deg, #184E68, #57CA85, #5B247A, #1BCEDF);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .profile-card > img {
     width: 150px;
