@@ -1,29 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const mrBtn = document.getElementById('majorRequirementsbtn');
-    const msBtn = document.getElementById('majorSelectbtn');
-    const grBtn = document.getElementById('generalrequirementsbtn');
-    const addbody = document.querySelector('.addbody');
-    const paginationContainer = document.querySelector('.pagination');
-    const clickbtn = document.querySelectorAll('.clickbtn');
+    const mrBtn = document.getElementById('majorRequirementsbtn'); // 전공필수 btn
+    const msBtn = document.getElementById('majorSelectbtn'); // 전공선택 btn
+    const grBtn = document.getElementById('generalrequirementsbtn'); // 교양필수 btn
+    const addbody = document.querySelector('.addbody'); // 데이터 추가할 테이블 tbody
+    const paginationContainer = document.querySelector('.pagination'); // 페이지네이션 
+    const clickbtn = document.querySelectorAll('.clickbtn'); // 활성화된 btn style
 
-    let mrarr = [];
-    let msarr = [];
-    let grarr = [];
+    let mrarr = []; // 전필 데이터 저장할 배열
+    let msarr = []; // 전선 
+    let grarr = []; // 교필
+
     const itemsPerPage = 4;
     let currentPage = 1;
     let activeBtn = 'mrBtn';
 
     function handleButtonClick(event) {
         // 버튼 상태 변경
-        if (event.target.id === 'majorRequirementsbtn') {
-            activeBtn = 'mrBtn';
+        if (event.target.id === 'majorRequirementsbtn') { // 전필 버튼이면
+            activeBtn = 'mrBtn'; // 활성화버튼 - 전필버튼으로 변경
         } else if (event.target.id === 'majorSelectbtn') {
             activeBtn = 'msBtn';
         } else if (event.target.id === 'generalrequirementsbtn') {
             activeBtn = 'grBtn';
         }
 
-        // 활성화된 버튼에 active 클래스 추가하고 다른 버튼에서 제거
+        // 활성화 버튼 style
         mrBtn.classList.toggle('clickbtn', activeBtn === 'mrBtn');
         msBtn.classList.toggle('clickbtn', activeBtn === 'msBtn');
         grBtn.classList.toggle('clickbtn', activeBtn === 'grBtn');
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         renderData(getCurrentDataArray(), currentPage);
     }
 
+    // btn 클릭 시 ~
     mrBtn.addEventListener('click', handleButtonClick);
     msBtn.addEventListener('click', handleButtonClick);
     grBtn.addEventListener('click', handleButtonClick);
@@ -62,11 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     function renderData(dataArr, page) {
-        mrBtn.classList.toggle('clickbtn', activeBtn === 'mrBtn');
+        mrBtn.classList.toggle('clickbtn', activeBtn === 'mrBtn'); // 초기 전필 btn 활성화
+
         // 데이터를 페이지 단위로 분할
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         const pageData = dataArr.slice(startIndex, endIndex);
+        console.log(pageData)
 
         // 테이블 내용 업데이트
         addbody.innerHTML = pageData.map(course => `
@@ -101,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             paginationContainer.appendChild(page);
+            console.log(page)
         }
     }
 

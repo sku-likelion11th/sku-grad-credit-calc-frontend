@@ -89,6 +89,7 @@
                 <div class="semesterGPA">
                     <div class="title">학기별 성적 평점</div>
                 </div>
+                <!-- 미수강과목 -->
                 <div class="uncompletedCourses">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <div class="title mb-0">미수강 과목</div>
@@ -100,9 +101,7 @@
                         </div>
                     </div>
 
-                    <!-- 전필 -->
-                    <div class="mrbody msbody grbody"></div>
-                    <table class="tableTitle">
+                    <table class="tableTitle text-center justify-content-center">
                         <thead>
                             <tr>
                                 <th>구분</th>
@@ -110,15 +109,33 @@
                                 <th>학점</th>
                             </tr>
                         </thead>
-                    </table>
-                    <table class="majorReq text-center justify-content-center">
                         <tbody class="addbody">
+                            <!-- 미수강 과목 데이터 추가되는 곳 -->
                         </tbody>
                     </table>
+                    <!-- 페이지네이션 -->
                     <div class="pagination"></div>
                 </div>
+
+                <!-- 재수강 추천 리스트 -->
                 <div class="RecommendedList">
-                    <div class="title">재수강 추천 리스트</div>
+                    <div class="title mb-4">재수강 추천 리스트</div>
+
+                    <table class="tableTitle text-center justify-content-center">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>과목명</th>
+                                <th>학점</th>
+                                <th>성적</th>
+                            </tr>
+                        </thead>
+                        <tbody class="recommendedBody">
+                            <!-- 재수강 추천 데이터 추가되는 곳 -->
+                        </tbody>
+                    </table>
+                    <!-- 페이지네이션 -->
+                    <div class="paginationRe"></div>
                 </div>
             </section>
             <!-- Section3 -->
@@ -156,7 +173,8 @@
         </div>
     </div>
     <script src="./source/boot-5.3.0/bootstrap.bundle.min.js"></script>
-    <script type='module' src="./js/new.js"></script>
+    <script type='module' src="./js/unCourse.js"></script>
+    <script type='module' src="./js/recommended.js"></script>
 </body>
 
 </html>

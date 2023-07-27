@@ -168,5 +168,12 @@ table {
 }
 
 .uncompletedCourses {
-    height: 375px;
+    height: 360px;
+    position: relative;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 47%;
 }
