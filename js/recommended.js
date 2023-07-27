@@ -38,18 +38,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
     // 4개씩 잘라서 렌더링
     async function renderData(dataArr, page) {
         try {
+            dataArr.sort(compareByGradeDescending); // 내림차순 정렬
+            console.log('정렬아 되어줘', dataArr);
+
             // 데이터를 페이지 단위로 분할
             const startIndex = (page - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-            const pageData = dataArr.slice(startIndex, endIndex);
-            console.log(pageData) // 4개 잘림
 
-            // 테이블에 데이터 4개 업데이트 map으로 돌려요이~
+            const pageData = dataArr.slice(startIndex, endIndex); // 4개로 잘림
+            console.log('4개 나와야 함', pageData)
+
+            // if 성적 F -> color:red~
             recommendedBody.innerHTML = pageData.map(course => `
-            <tr>
+            <tr style="color: ${course.grade === 'F' ? 'red' : 'inherit'}">
                 <td>${course.category}</td>
                 <td>${course.subject}</td>
                 <td>${course.score}</td>
@@ -62,6 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.log(error);
         }
+    }
+
+    // 커스텀 비교 함수
+    function compareByGradeDescending(a, b) {
+        const gradeOrder = { 'B': 7, 'C+': 6, 'C': 5, 'D+': 4, 'D': 3, 'E': 2, 'F': 1 }; // 등급별 순서 설정
+        return gradeOrder[a.grade] - gradeOrder[b.grade];
     }
 
     // 페이지네이션 함수
