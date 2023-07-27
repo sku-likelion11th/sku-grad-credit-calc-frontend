@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./source/boot-5.3.0/bootstrap.min.css">
     <link rel="stylesheet" href="./source/result.css">
+    <link rel="stylesheet" href="./source/chart.css">
+    <link rel="stylesheet" href="./source/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>졸업학점계산기 분석결과</title>
@@ -72,9 +74,34 @@
                         </div>
                     </div>
                 </div>
-                <!-- 성적 비율 (시은 담당) -->
-                <div class="gradeRatio">
+                <!-- 성적 비율 -->
+                <div class="gradeRatio doughnut-container">
                     <div class="title">성적 비율</div>
+                    <div class="mt-4 d-flex align-items-center justify-content-center text-center flex-column">
+                        <div class="doughnut-chart-box">
+                            <canvas id="doughnut-chart"></canvas>
+                            <div class="doughnut-data mt-4">
+                                <ul>
+                                    <li>
+                                        <div class="dot dot-blue"></div>
+                                        A+ ~ A0<span class="percentage">32%</span>
+                                    </li>
+                                    <li>
+                                        <div class="dot dot-red"></div>
+                                        B+ ~ B0<span class="percentage">35%</span>
+                                    </li>
+                                    <li>
+                                        <div class="dot dot-orange"></div>
+                                        C+ ~ C0<span class="percentage">28%</span>
+                                    </li>
+                                    <li>
+                                        <div class="dot dot-yellow"></div>
+                                        F<span class="percentage"> 5%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- 이수구분변경 필요 리스트 -->
                 <div class="RequiredChangeList">
@@ -110,7 +137,7 @@
                             </tr>
                         </thead>
                         <tbody class="addbody">
-                            <!-- 미수강 과목 데이터 추가되는 곳 -->
+                            <!-- 미수강 과목 데이터 추가 -->
                         </tbody>
                     </table>
                     <!-- 페이지네이션 -->
@@ -131,7 +158,7 @@
                             </tr>
                         </thead>
                         <tbody class="recommendedBody">
-                            <!-- 재수강 추천 데이터 추가되는 곳 -->
+                            <!-- 재수강 추천 데이터 추가 -->
                         </tbody>
                     </table>
                     <!-- 페이지네이션 -->
@@ -175,6 +202,8 @@
     <script src="./source/boot-5.3.0/bootstrap.bundle.min.js"></script>
     <script type='module' src="./js/unCourse.js"></script>
     <script type='module' src="./js/recommended.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type='module' src="./js/chart.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+// 미수강 과목
 document.addEventListener('DOMContentLoaded', function() {
     const mrBtn = document.getElementById('majorRequirementsbtn'); // 전공필수 btn
     const msBtn = document.getElementById('majorSelectbtn'); // 전공선택 btn

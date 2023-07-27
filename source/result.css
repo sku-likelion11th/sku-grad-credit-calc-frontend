@@ -26,7 +26,7 @@
     border: 1px solid #999EA4;
     border-radius: 10px;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .title {
@@ -43,7 +43,7 @@
 }
 
 .gradeRatio {
-    height: 350px;
+    height: 390px;
 }
 
 .RequiredChangeList li {
