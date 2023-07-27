@@ -145,10 +145,7 @@ li {
 /*line-chart 크기조정*/
 
 .line-chart-box {
-    width: 710px;
-    height: 360px;
-    border-radius: 10px;
-    border: 1px solid #999ea4;
+    margin: 0 auto;
+    width: 600px;
     background: #fff;
-    margin-bottom: 50px;
 }

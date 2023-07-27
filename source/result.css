@@ -194,3 +194,17 @@ table {
 .RecommendedList table th:nth-child(2) {
     width: 240px;
 }
+
+
+/* 학기별 성적 평점 */
+
+.totalGPA {
+    margin: 10px 0 25px 0;
+}
+
+.totalGPA span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
