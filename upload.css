@@ -35,8 +35,12 @@ body {
 .step > p {
   margin-top: 19.39px;
 }
-.step1Img {
+.img_step1 {
   height: 115px;
+  margin-top: -9px;
+}
+.img_step3 {
+  margin-left: -9px;
 }
 hr {
   margin: 0px;
@@ -50,7 +54,6 @@ hr {
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  margin-right: 54px;
 }
 
 #input {
@@ -81,6 +84,7 @@ hr {
 /* notice */
 .notice {
   height: 411px;
+  background-color: #ffffff;
 }
 .notice-text {
   padding-top: 24px;
