@@ -61,7 +61,7 @@
 }
 
 .uncompleteBtn button:hover {
-    background-color: #0C76CC;
+    background-color: rgb(12, 118, 204);
     color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -126,4 +126,12 @@ table tr {
 
 table {
     margin: 20px auto;
+}
+
+
+/* 버튼 클릭시 style */
+
+.clickbtn {
+    background-color: #0C76CC;
+    color: white;
 }
