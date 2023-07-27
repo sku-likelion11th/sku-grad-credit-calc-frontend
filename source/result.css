@@ -5,6 +5,11 @@
     font-style: normal;
 }
 
+.navbar,
+.navbar-nav a {
+    color: #001D2D !important;
+}
+
 .pretendard {
     font-family: 'Pretendard-Regular';
 }
