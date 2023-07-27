@@ -10,93 +10,135 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar">
-        <div class="d-flex align-items-center">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
           <a
-            href="index.html"
-            class="logo-sku-sku kanit-font text-decoration-none text-black"
+            href="/"
+            class="navbar-brand logo-sku-sku kanit-font text-decoration-none text-black"
             >SKU-SKU</a
           >
-          <span class="divider kanit-font text-black px-3">|</span>
+          <span class="divider kanit-font text-black px-lg-3">|</span>
           <a
-            href="#"
-            class="pretendard-font service-name text-decoration-none text-black"
+            href="/"
+            class="navbar-brand pretendard-font service-name text-decoration-none text-black"
             >성결대학교 졸업학점계산기</a
           >
-        </div>
-        <div>
-          <a
-            href="index.html#calc"
-            class="menu pretendard-font text-decoration-none text-black px-2"
-            >계산기</a
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <a
-            href="/index.html#collabo"
-            class="menu pretendard-font text-decoration-none text-black px-2"
-            >콜라보</a
-          >
-          <a
-            href="/index.html#maker"
-            class="menu pretendard-font text-decoration-none text-black px-2"
-            >만든이들</a
-          >
-          <a
-            href="/index.html#contact"
-            class="menu pretendard-font text-decoration-none text-black px-2"
-            >문의하기</a
-          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  href="#calc"
+                  class="nav-link menu pretendard-font text-decoration-none text-black px-2"
+                  >계산기</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#collabo"
+                  class="nav-link menu pretendard-font text-decoration-none text-black px-2"
+                  >콜라보</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#maker"
+                  class="nav-link menu pretendard-font text-decoration-none text-black px-2"
+                  >만든이들</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#contact"
+                  class="nav-link menu pretendard-font text-decoration-none text-black px-2"
+                  >문의하기</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
 
-    <!--howUse-->
+    <!-- howUse -->
     <section class="howUse pretendard-font">
       <div class="container">
         <div class="howuse-text">학점 계산기,<br />어떻게 사용할까요?</div>
-        <div class="row d-flex justify-content-center">
-          <div class="uploadBox col-3 text-center me-5">
-            <div class="step">
-              <p class="step-text">STEP 1.</p>
-              <img src="./source/img/upload_img/step1.png" class="img_step1" />
+
+        <div class="row">
+          <div class="col-6 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="uploadBox text-center">
+              <div class="step">
+                <p>STEP 1.</p>
+                <img
+                  src="./source/img/upload_img/step1.png"
+                  class="img_step1"
+                />
+              </div>
+
+              <hr class="pb-3" />
+              <p class="step-sub-title">SKY 시스템 접속하기</p>
             </div>
-            <hr class="pb-3" />
-            <p class="step-sub-title">SKY 시스템 접속하기</p>
           </div>
 
-          <div class="uploadBox col-3 text-center me-5">
-            <div class="step">
-              <p class="step-text">STEP 2.</p>
-              <img src="./source/img/upload_img/step2.png" class="mt-2" />
+          <div class="col-6 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="uploadBox text-center">
+              <div class="step">
+                <p>STEP 2.</p>
+                <img
+                  src="./source/img/upload_img/step2.png"
+                  class="img_step2"
+                />
+              </div>
+              <hr class="pb-2" />
+              <p class="step-sub-title">
+                성적 정보 클릭 후 <br />개인별 학기 성적조회
+              </p>
             </div>
-            <hr class="pb-2" />
-            <p class="step-sub-title">
-              성적 정보 클릭 후 <br />개인별 학기 성적조회
-            </p>
           </div>
 
-          <div class="uploadBox col-3 text-center me-5">
-            <div class="step">
-              <p class="step-text">STEP 3.</p>
-              <img
-                src="./source/img/upload_img/step3.png"
-                class="img_step3 mt-4"
-              />
+          <div class="col-6 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="uploadBox text-center">
+              <div class="step">
+                <p>STEP 3.</p>
+                <img
+                  src="./source/img/upload_img/step3.png"
+                  class="img_step3"
+                />
+              </div>
+              <hr class="pb-2" />
+              <p class="step-sub-title">
+                포털비밀번호 입력 후<br />이수구분별성적조회 클릭
+              </p>
             </div>
-            <hr class="pb-2" />
-            <p class="step-sub-title">
-              포털비밀번호 입력 후<br />이수구분별성적조회 클릭
-            </p>
           </div>
 
-          <div class="uploadBox col-3 text-center me-5">
-            <div class="step">
-              <p class="step-text">STEP 4.</p>
-              <img src="./source/img/upload_img/step4.png" class="mt-4" />
+          <div class="col-6 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="uploadBox text-center">
+              <div class="step">
+                <p>STEP 4.</p>
+                <img
+                  src="./source/img/upload_img/step4.png"
+                  class="img_step4"
+                />
+              </div>
+              <hr class="pb-3" />
+              <p class="step-sub-title">엑셀 파일 다운로드</p>
             </div>
-            <hr class="pb-3" />
-            <p class="step-sub-title">엑셀 파일 다운로드</p>
           </div>
         </div>
+
         <div class="uploadBtn text-center">
           <div><input id="input" type="file" /></div>
           <button id="uploadBtn" onclick="onClickUpload();">
@@ -110,7 +152,7 @@
       </div>
     </section>
 
-    <!--notice-->
+    <!-- notice -->
     <section class="notice">
       <div class="container pretendard-font">
         <div class="notice-text">유의사항</div>
@@ -138,13 +180,13 @@
         </ul>
       </div>
     </section>
-
-    <footer class="contact pb-5">
+    <!-- 문의하기 Footer -->
+    <footer class="contact pb-5" id="contact">
       <div class="container">
         <div class="contact-title pretendard-font py-4 text-white">
           문의하기
         </div>
-        <div class="text-center text-white pretendard-font">
+        <div class="contact-sub-text text-center text-white pretendard-font">
           성결대학교 졸업학점 계산기는 성결대 멋쟁이사자처럼 11기가
           제작하였습니다.<br />
           서비스 및 동아리 관련 문의는 아래 채널들을 통해 해주시길 바랍니다.

@@ -1,100 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,800&display=swap');
+/* 공통 디자인 CSS 만 여기 적용 */
+/* Font 정보 */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,800&display=swap");
 .kanit-font {
-    font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 .pretendard-font {
-    font-family: 'Pretendard';
+  font-family: "Pretendard";
 }
+
+/* Navbar 디자인 CSS */
 .logo-sku-sku {
-    font-size: 30px;
-    font-weight: 800;
-    font-style: italic;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
 }
 .divider {
-    font-size: 30px;
-    font-weight: 900;
+  font-size: 30px;
+  font-weight: 900;
 }
 .service-name {
-    font-size: 16px;
-    font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
 }
 .menu {
-    font-size: 16px;
-    font-weight: 800;
+  font-size: 16px;
+  font-weight: 800;
 }
-.main {
-    background-image: url('./img/main_section_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 900px;
-}
-.main-text {
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 120%;
-}
-.main-calc-btn {
-    font-size: 18px;
-    border-radius: 20px;
-    background: #059BDE;
-    border: none;
-}
-.main-maker-btn {
-    font-size: 18px;
-    border-radius: 20px;
-    background: none;
-    border: 1px solid #ffffff;
-}
-.main-content {
-    padding: 150px 0;
-}
-.section-name {
-    font-family: 'Pretendard';
-    font-size: 30px;
-    font-weight: 700;
-    color: #069BDF;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-.section-text {
-    font-family: 'Pretendard';
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 120%;
-}
-.preview-img {
-    margin-top: 200px;
-}
-.collabo-section {
-    background-color: #F9FAFB;
-}
-.collabo-team {
-    width: 300px;
-    height: auto;
-}
-.profile-card {
-    border: 2px solid #000000;
-    border-radius: 30px;
-}
-.profile-card > img {
-    width: 150px;
-    height: auto;
-}
+
+/* 문의하기 Section CSS */
 .contact {
-    background-color: #001D2D;
+  background-color: #001d2d;
 }
 .contact-title {
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 }
-.contact-icon{
-    width: 50px;
-    height: auto;
+.contact-icon {
+  width: 50px;
+  height: auto;
 }
 .copyright {
-    color: #C3C3C3;
+  color: #c3c3c3;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* 모바일 새로화면 기준 CSS 적용 */
+@media (max-width: 575.98px) {
+  .logo-sku-sku {
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+  }
+  .divider {
+    /* font-size: 30px;
+        font-weight: 700; */
+    display: none;
+  }
+  .service-name {
+    /* font-size: 13px;
+        font-weight: 700; */
+    display: none;
+  }
+  .contact-title {
+    font-size: 30px;
     font-weight: 700;
-    font-size: 20px;
+  }
+  .contact-sub-text {
+    font-size: 11px;
+  }
 }
