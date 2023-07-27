@@ -102,7 +102,7 @@ th,
 td {
     display: inline-block;
     padding: 10px;
-    width: 200px;
+    width: 150px;
 }
 
 tr {
@@ -113,6 +113,12 @@ tbody tr:last-child {
     border: none;
 }
 
+tbody {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 thead {
     color: #5F5F5F;
 }
@@ -121,11 +127,18 @@ table tr {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 table {
-    margin: 20px auto;
+    margin: 0 auto;
+    height: 180px;
+    width: 90%;
+}
+
+.tableTitle {
+    height: auto;
+    width: 90%;
 }
 
 
@@ -134,4 +147,26 @@ table {
 .clickbtn {
     background-color: #0C76CC;
     color: white;
+}
+
+
+/* 페이지네이션 */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.page.active {
+    font-weight: bold;
+}
+
+.uncompletedCourses {
+    height: 375px;
 }
