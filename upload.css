@@ -107,6 +107,9 @@ hr {
   .howUse {
     height: auto;
   }
+  .notice {
+    height: auto;
+  }
   .uploadBox {
     background: #fff;
     margin-bottom: 48px;
@@ -152,6 +155,12 @@ hr {
       border-radius: 10px;
     }
 
+    .img_step3 {
+      height: 24px;
+    }
+    .img_step4 {
+      height: 37px;
+    }
     #uploadBtn {
       margin: -30px 0px 50px 0;
     }
