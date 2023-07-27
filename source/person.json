@@ -40,7 +40,7 @@
     },
     {
         "id": 6,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/wonkyung.png",
         "name": "이원경",
         "department": "국어국문학과 22",
         "position": "운영진",
@@ -64,7 +64,7 @@
     },
     {
         "id": 9,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/jieun.png",
         "name": "박지은",
         "department": "미디어소프트웨어학과 20",
         "position": "아기사자",
@@ -80,7 +80,7 @@
     },
     {
         "id": 11,
-        "image": "source/img/profile-img.png",
+        "image": "source/img/makers/joomi.png",
         "name": "김주미",
         "department": "미디어소프트웨어학과 21",
         "position": "아기사자",
