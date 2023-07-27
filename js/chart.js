@@ -27,7 +27,7 @@ function frame1() {
 }
 
 function frame2() {
-  if (width2 >= 86) {
+  if (width2 >= 80) {
     clearInterval(id2);
     i2 = 0;
   } else {

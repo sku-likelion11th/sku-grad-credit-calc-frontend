@@ -30,11 +30,10 @@ li {
 }
 
 .progress-container {
-    width: 122px;
+    width: 105px;
     height: 12px;
     background-color: #eeeeee;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .progress-bar {
@@ -60,6 +59,10 @@ li {
 
 #progress-bar4 {
     background-color: #58c6eb;
+}
+
+#progress-bar5 {
+    background-color: #74c574;
 }
 
 
