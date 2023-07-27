@@ -6,7 +6,7 @@ fetch('source/person.json').then(function(response){
 }).then(function(items){
     items.forEach(function(items, i){
         const template = `
-            <div class="col-md-2 p-2">
+            <div class="col-6 col-md-2 p-2">
                 <div class="profile-card text-center py-4">
                     <img src="${items.image}" alt="프로필 이미지">
                     <div class="pretendard-font fw-medium fs-4">${items.name}</div>
