@@ -1,30 +1,20 @@
+import { mrBtn, msBtn, grBtn, mrTable, msTable, grTable, clickbtn, page, active, mrbody, msbody, grbody, mrList, msList, grList } from './variables.js';
+
 document.addEventListener('DOMContentLoaded', function() {
-    // 버튼
-    const mrBtn = document.getElementById('majorRequirementsbtn');
-    const msBtn = document.getElementById('majorSelectbtn');
-    const grBtn = document.getElementById('generalrequirementsbtn');
+    // 페이지네이션
+    const itemsPerPage = 4;
+    const paginationContainer = document.querySelector('.pagination');
 
-    // 테이블
-    const mrTable = document.querySelectorAll('.majorReq');
-    const msTable = document.querySelectorAll('.majorSel');
-    const grTable = document.querySelectorAll('.generalReq');
+    // 총 페이지 수 계산
+    const mrtotalPages = Math.ceil(mrList.length / itemsPerPage);
+    const mstotalPages = Math.ceil(msList.length / itemsPerPage);
+    const grtotalPages = Math.ceil(grList.length / itemsPerPage);
 
-    // css
-    const clickbtn = document.querySelectorAll('.clickbtn');
-    const page = document.querySelectorAll('.page');
-    const active = document.querySelectorAll('.page.active');
 
-    // tbody
-    const mrbody = mrTable[0].querySelector('tbody');
-    const msbody = msTable[0].querySelector('tbody');
-    const grbody = grTable[0].querySelector('tbody');
+    // 현재 페이지를 추적하는 변수
+    let currentPage = 1;
 
-    // tr
-    const mrList = mrbody.querySelectorAll('tr');
-    const msList = msbody.querySelectorAll('tr');
-    const grList = grbody.querySelectorAll('tr');
-
-    // 버튼에 따라 table, btn style 변경
+    // 활성화 테이블, 버튼 style
     function showTable(tableToShow, hide1Array, hide2Array, btnToShow, hidebtn1, hidebtn2) {
         hide1Array.forEach(function(row) {
             row.style.display = 'none';
@@ -40,19 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
             btnToShow.classList.add("clickbtn");
         });
 
+    }
 
-    } // 페이지네이션
-    const itemsPerPage = 4;
-    const paginationContainer = document.querySelector('.pagination');
-
-    // 총 페이지 수 계산
-    const mrtotalPages = Math.ceil(mrList.length / itemsPerPage);
-    const mstotalPages = Math.ceil(msList.length / itemsPerPage);
-    const grtotalPages = Math.ceil(grList.length / itemsPerPage);
-
-    // 현재 페이지를 추적하는 변수
-    let currentPage = 1;
-
+    // 페이지네이션 추가, course 개수에 따라 달라지도록
     function createPagination(tbody, trList, totalPages) {
         paginationContainer.innerHTML = '';
 
@@ -75,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // 정보 아이템 보여주는 함수
+    // 4개까지
     function showItems(tbody, trList, totalPages) {
         tbody.innerHTML = '';
 
@@ -89,25 +69,21 @@ document.addEventListener('DOMContentLoaded', function() {
         createPagination(tbody, trList, totalPages);
     }
 
+    // 초기화 함수, 맨 처음 전필 테이블
     function initialize() {
-        // 버튼 클릭에 따라 보여줄 테이블과 데이터를 설정하는 로직 작성
-
-        // 전필 테이블을 초기 데이터로 보여줍니다.
         mrTable.forEach(row => row.style.display = 'flex');
         msTable.forEach(row => row.style.display = 'none');
         grTable.forEach(row => row.style.display = 'none');
 
-        // 초기 페이지를 1로 설정하고 전필 테이블 데이터를 보여줍니다.
         currentPage = 1;
         showItems(mrbody, mrList, currentPage, itemsPerPage);
-
-        // 페이지네이션을 설정합니다.
         createPagination(mrbody, mrList, mrtotalPages);
     }
-    // 초기화 함수 호출
-    initialize();
+
+    initialize(); // 초기화
 
     // 각 버튼 클릭 시~
+    // 전필
     mrBtn.addEventListener("click", function() {
         console.log('전필')
         currentPage = 1;
@@ -115,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showTable(Array.from(mrTable), Array.from(msTable), Array.from(grTable), mrBtn, msBtn, grBtn);
     });
 
+    // 전선
     msBtn.addEventListener("click", function() {
         console.log('전선')
         currentPage = 1;
@@ -122,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showTable(Array.from(msTable), Array.from(mrTable), Array.from(grTable), msBtn, mrBtn, grBtn);
     });
 
+    // 교필
     grBtn.addEventListener("click", function() {
         console.log('교필')
         currentPage = 1;
