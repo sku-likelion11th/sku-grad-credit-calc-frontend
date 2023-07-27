@@ -117,13 +117,13 @@ thead {
     color: #5F5F5F;
 }
 
-.uncompletedCoursesTable tr {
+table tr {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.uncompletedCoursesTable {
-    width: 90%;
+table {
     margin: 20px auto;
 }
