@@ -1,3 +1,5 @@
+/* 공통 디자인 CSS 만 여기 적용 */
+/* Font 정보 */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,800&display=swap');
 .kanit-font {
     font-family: 'Kanit', sans-serif;
@@ -6,6 +8,8 @@
 .pretendard-font {
     font-family: 'Pretendard';
 }
+
+/* Navbar 디자인 CSS */
 .logo-sku-sku {
     font-size: 30px;
     font-weight: 800;
@@ -23,65 +27,8 @@
     font-size: 16px;
     font-weight: 800;
 }
-.main {
-    background-image: url('./img/main_section_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 900px;
-}
-.main-text {
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 120%;
-}
-.main-calc-btn {
-    font-size: 18px;
-    border-radius: 20px;
-    background: #059BDE;
-    border: none;
-}
-.main-maker-btn {
-    font-size: 18px;
-    border-radius: 20px;
-    background: none;
-    border: 1px solid #ffffff;
-}
-.main-content {
-    padding: 150px 0;
-}
-.section-name {
-    font-family: 'Pretendard';
-    font-size: 30px;
-    font-weight: 700;
-    color: #069BDF;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-.section-text {
-    font-family: 'Pretendard';
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 120%;
-}
-.preview-img {
-    margin-top: 200px;
-}
-.collabo-section {
-    background-color: #F9FAFB;
-}
-.collabo-team {
-    width: 300px;
-    height: auto;
-}
-.profile-card {
-    border: 2px solid #000000;
-    border-radius: 30px;
-}
-.profile-card > img {
-    width: 150px;
-    height: auto;
-}
+
+/* 문의하기 Section CSS */
 .contact {
     background-color: #001D2D;
 }
