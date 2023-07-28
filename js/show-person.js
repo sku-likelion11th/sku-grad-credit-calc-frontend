@@ -1,4 +1,4 @@
-fetch('source/person.json').then(function(response){
+fetch('js/person.json').then(function(response){
     if(!response.ok){
         throw new Error('에러');
     }

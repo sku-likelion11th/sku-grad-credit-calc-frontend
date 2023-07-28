@@ -1,48 +1,246 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./source/boot-5.3.0/bootstrap.min.css">
-    <link rel="stylesheet" href="./source/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/chart.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/result.css">
     <title>졸업학점계산기 분석결과</title>
 </head>
+
 <body>
     <div class="container">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a href="/" class="navbar-brand logo-sku-sku kanit-font text-decoration-none text-black">SKU-SKU</a>
-                <span class="divider kanit-font text-black px-lg-3">|</span>
-                <a href="/" class="navbar-brand pretendard-font service-name text-decoration-none text-black">성결대학교 졸업학점계산기</a>
+                <a href="/" class="navbar-brand logo-sku-sku kanit-font text-decoration-none">SKU-SKU</a>
+                <span class="divider kanit-font px-lg-3">|</span>
+                <a href="/" class="navbar-brand pretendard-font service-name text-decoration-none">성결대학교 졸업학점계산기</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a href="./index.html#calc" class="nav-link menu pretendard-font text-decoration-none text-black px-2">계산기</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="./index.html#collabo" class="nav-link menu pretendard-font text-decoration-none text-black px-2">콜라보</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="./index.html#maker" class="nav-link menu pretendard-font text-decoration-none text-black px-2">만든이들</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="./index.html#contact" class="nav-link menu pretendard-font text-decoration-none text-black px-2">문의하기</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/#calc" class="nav-link menu pretendard-font text-decoration-none px-2">계산기</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/#collabo" class="nav-link menu pretendard-font text-decoration-none px-2">콜라보</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/#maker" class="nav-link menu pretendard-font text-decoration-none px-2">만든이들</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link menu pretendard-font text-decoration-none px-2">문의하기</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="allSection row align-items-start">
+            <!-- Section1 -->
+            <section class="sec1 col-md-3">
+                <!-- 총 이수 학점 -->
+                <div class="totalCredits">
+                    <div>
+                        <span class="title">총 이수 학점</span>
+                        <br />
+                        <span class="fs-4 fw-bold"> ??? / 123점</span>
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="title">이수 학점</span>
+                            <!-- 모달창 -->
+                            <span>
+                                <button class="modalBtn">이수과목 리스트 보기</button>
+                            </span>
+                        </div>
+                        <!-- 전공필수 -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-6">전공필수</span>
+                            <span class="score">?/9점</span>
+                            <div id="progress-container1" class="progress-container">
+                                <div id="progress-bar1" class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <!-- 전공선택 -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-6">전공선택</span>
+                            <span class="score">?/65점</span>
+                            <div id="progress-container2" class="progress-container">
+                                <div id="progress-bar2" class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <!-- 교양필수 -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-6">교양필수</span>
+                            <span class="score">?/16점</span>
+                            <div id="progress-container3" class="progress-container">
+                                <div id="progress-bar3" class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <!-- 교양선택 -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-6">교양선택</span>
+                            <span class="score">?/21점</span>
+                            <div id="progress-container4" class="progress-container">
+                                <div id="progress-bar4" class="progress-bar"></div>
+                            </div>
+                        </div>
+                        <!-- 일반선택 -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-6">일반선택</span>
+                            <span class="score">6학점</span>
+                            <div style="width:105px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 성적 비율 -->
+                <div class="gradeRatio doughnut-container">
+                    <div class="title">성적 비율</div>
+                    <div class="mt-4 d-flex align-items-center justify-content-center text-center flex-column">
+                        <div class="doughnut-chart-box">
+                            <canvas id="doughnut-chart"></canvas>
+                            <div class="doughnut-data mt-4">
+                                <ul>
+                                    <li>
+                                        <div class="dot dot-blue"></div>
+                                        A+ ~ A0<span class="percentage">32%</span>
+                                    </li>
+                                    <li>
+                                        <div class="dot dot-red"></div>
+                                        B+ ~ B0<span class="percentage">35%</span>
+                                    </li>
+                                    <li>
+                                        <div class="dot dot-orange"></div>
+                                        C+ ~ C0<span class="percentage">28%</span>
+                                    </li>
+                                    <li>
+                                        <div class="dot dot-yellow"></div>
+                                        F<span class="percentage"> 5%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 이수구분변경 필요 리스트 -->
+                <div class="RequiredChangeList">
+                    <div class="title">이수구분변경 필요 리스트</div>
+                    <ul>
+                        <li>제품기획및개발(전선) <i class="bi bi-caret-right-fill"></i> 제품기획및개발(전필)</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Section2 -->
+            <section class="sec2 col-md-7">
+                <!-- 학기별 성적 평점 -->
+                <div class="semesterGPA">
+                    <div class="title">학기별 성적 평점</div>
+                    <div class="totalGPA">전체 평점 <span>?.??</span> / 4.5</div>
+                    <div class="line-container">
+                        <div class="line-chart-box">
+                            <canvas id="line-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- 미수강과목 -->
+                <div class="uncompletedCourses">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="title mb-0">미수강 과목</div>
+                        <!-- button -->
+                        <div class="uncompleteBtn">
+                            <button id="majorRequirementsbtn">전공필수</button>
+                            <button id="majorSelectbtn">전공선택</button>
+                            <button id="generalrequirementsbtn">교양필수</button>
+                        </div>
+                    </div>
+
+                    <table class="tableTitle text-center justify-content-center">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>과목명</th>
+                                <th>학점</th>
+                            </tr>
+                        </thead>
+                        <tbody class="addbody">
+                            <!-- 미수강 과목 데이터 추가 -->
+                        </tbody>
+                    </table>
+                    <!-- 페이지네이션 -->
+                    <div class="pagination"></div>
+                </div>
+
+                <!-- 재수강 추천 리스트 -->
+                <div class="RecommendedList">
+                    <div class="title mb-4">재수강 추천 리스트</div>
+
+                    <table class="tableTitle text-center justify-content-center">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>과목명</th>
+                                <th>학점</th>
+                                <th>성적</th>
+                            </tr>
+                        </thead>
+                        <tbody class="recommendedBody">
+                            <!-- 재수강 추천 데이터 추가 -->
+                        </tbody>
+                    </table>
+                    <!-- 페이지네이션 -->
+                    <div class="paginationRe"></div>
+                </div>
+            </section>
+            <!-- Section3 -->
+            <section class="sec3 col-md-2">
+                <!-- 정보 -->
+                <div class="intro">
+                    <span class="fw-bold">홍길동</span>님<br/>
+                    <span class="id">20200977</span>
+                    <span class="grade"> / 3학년</span>
+                    <div class="my-3">
+                        <span>산업경영공학과</span><br/>
+                        <span class="majorDeep">전공 심화</span>
+                    </div>
+                    <div class="clear">
+                        <button>데이터 삭제하기</button>
+                    </div>
+                </div>
+                <!-- 채플 카운트 -->
+                <div class="chapelCount">
+                    <div class="title">채플 카운트</div>
+                    <div class="fs-1 text-center fw-bold">? / 6</div>
+                </div>
+                <!-- 졸업 요구사항 -->
+                <div class="GraduationRequirements">
+                    <div class="title">졸업 요구사항</div>
+                    <ul>
+                        <li>졸업작품</li>
+                        <li>졸업논문</li>
+                        <li>품질경영기사</li>
+                        <li>토익 800점 이상</li>
+                        <li>S-point 12포인트</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
+
     <!-- 문의하기 Footer -->
     <footer class="contact pb-5" id="contact">
         <div class="container">
             <div class="contact-title pretendard-font py-4 text-white">문의하기</div>
             <div class="contact-sub-text text-center text-white pretendard-font">
-                성결대학교 졸업학점 계산기는 성결대 멋쟁이사자처럼 11기가 제작하였습니다.<br />
-                서비스 및 동아리 관련 문의는 아래 채널들을 통해 해주시길 바랍니다.
+                성결대학교 졸업학점 계산기는 성결대 멋쟁이사자처럼 11기가 제작하였습니다.<br /> 서비스 및 동아리 관련 문의는 아래 채널들을 통해 해주시길 바랍니다.
             </div>
             <div class="d-flex justify-content-center py-5">
                 <a href="mailto:sku@likelion.org"><img class="mx-2 contact-icon img-fluid" src="./source/img/email.png" alt="Email"></a>
@@ -54,5 +252,10 @@
         </div>
     </footer>
     <script src="./source/boot-5.3.0/bootstrap.bundle.min.js"></script>
+    <script type='module' src="./js/unCourse.js"></script>
+    <script type='module' src="./js/recommended.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type='module' src="./js/chart.js"></script>
 </body>
+
 </html>
