@@ -252,6 +252,7 @@ table {
 .modal-table {
     margin: 0 auto;
     width: 95%;
+    height: auto;
 }
 
 .modal-table tr {
@@ -261,18 +262,26 @@ table {
     margin-bottom: 3px;
 }
 
+.modal-table tr td:first-child,
+.modal-table tr th:first-child {
+    width: 60px;
+}
+
 .modal-table tr td:nth-child(2),
 .modal-table tr th:nth-child(2) {
     width: 160px;
 }
 
-.modal-table tr td:nth-child(4),
-.modal-table tr th:nth-child(4),
 .modal-table tr td:nth-child(3),
-.modal-table tr th:nth-child(3) {
+.modal-table tr th:nth-child(3),
+.modal-table tr td:nth-child(4),
+.modal-table tr th:nth-child(5) {
     width: 30px;
 }
 
-.modal-thead {
-    color: #5F5F5F;
+.modal-table tr td:nth-child(5),
+.modal-table tr th:nth-child(5),
+.modal-table tr td:nth-child(6),
+.modal-table tr th:nth-child(6) {
+    width: 40px;
 }

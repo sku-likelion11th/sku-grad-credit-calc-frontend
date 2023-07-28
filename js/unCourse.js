@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         const pageData = dataArr.slice(startIndex, endIndex);
-        console.log(pageData)
 
         // 테이블 내용 업데이트
         addbody.innerHTML = pageData.map(course => `
@@ -106,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             paginationContainer.appendChild(page);
-            console.log(page)
         }
     }
 

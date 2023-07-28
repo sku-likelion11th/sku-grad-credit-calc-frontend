@@ -30,27 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
             recommendedData.forEach(function(course) {
                 recommendedarr.push(course);
             });
-            console.log('객체형태로 배열에 추가', recommendedarr)
-                // 초기 렌더링
+            
             renderData(recommendedarr, currentPage);
         } catch (error) {
             console.error(error);
         }
     }
 
-
     // 4개씩 잘라서 렌더링
     async function renderData(dataArr, page) {
         try {
             dataArr.sort(compareByGradeDescending); // 내림차순 정렬
-            console.log('정렬아 되어줘', dataArr);
 
             // 데이터를 페이지 단위로 분할
             const startIndex = (page - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
 
             const pageData = dataArr.slice(startIndex, endIndex); // 4개로 잘림
-            console.log('4개 나와야 함', pageData)
 
             // if 성적 F -> color:red~
             recommendedBody.innerHTML = pageData.map(course => `
@@ -71,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 커스텀 비교 함수
     function compareByGradeDescending(a, b) {
-        const gradeOrder = { 'B': 7, 'C+': 6, 'C': 5, 'D+': 4, 'D': 3, 'E': 2, 'F': 1 }; // 등급별 순서 설정
+        const gradeOrder = { 'B+': 8, 'B': 7, 'C+': 6, 'C': 5, 'D+': 4, 'D': 3, 'E': 2, 'F': 1 }; // 등급별 순서 설정
         return gradeOrder[a.grade] - gradeOrder[b.grade];
     }
 
