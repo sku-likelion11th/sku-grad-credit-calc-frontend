@@ -6,7 +6,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 .navbar {
-  padding: 50px 0 50px 0;
+  padding-bottom: 10px;
 }
 /* howUse*/
 
@@ -17,7 +17,7 @@ body {
 .howuse-text {
   font-size: 40px;
   font-weight: 800;
-  padding: 24px 12px 50px 12px;
+  padding: 24px 0px 50px 0px;
 }
 .uploadBox {
   border: 1px solid #999ea4;
@@ -69,10 +69,10 @@ hr {
   border-radius: 30px;
   border: 2px solid #5ab0ff;
   background: #2579f1;
-  width: 284px;
+  width: 264px;
   height: 60.098px;
-  font-size: 24px;
-  margin-top: 30px;
+  font-size: 22px;
+  margin-top: 55px;
 }
 
 .btn-text {
@@ -82,7 +82,7 @@ hr {
 .uploadBtn img {
   position: absolute;
   padding-left: 10px;
-  padding-top: 4.5px;
+  padding-top: 1.5px;
 }
 
 /* notice */
@@ -91,7 +91,7 @@ hr {
   background-color: #ffffff;
 }
 .notice-text {
-  padding: 24px 12px 0 12px;
+  padding-top: 24px;
   font-size: 40px;
   font-weight: 800;
 }
@@ -107,9 +107,7 @@ hr {
   .howUse {
     height: auto;
   }
-  .notice {
-    height: auto;
-  }
+
   .uploadBox {
     background: #fff;
     margin-bottom: 48px;
@@ -117,6 +115,10 @@ hr {
 
   #uploadBtn {
     margin: 0px 0px 90px 0;
+  }
+
+  .notice {
+    height: 411px;
   }
   .notice-sub-text {
     font-size: 18px;
@@ -126,9 +128,11 @@ hr {
     .howUse {
       height: auto;
     }
-
     #uploadBtn {
       margin: 10px 0px 50px 0;
+    }
+    .notice {
+      height: 411px;
     }
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
@@ -150,31 +154,57 @@ hr {
     .howUse {
       height: auto;
     }
+    .howuse-text {
+      font-size: 30px;
+    }
     .uploadBox {
       border: 1px solid #999ea4;
       border-radius: 10px;
     }
-
+    .img_step1 {
+      height: 100px;
+      margin-top: 0.2px;
+    }
+    .img_step2 {
+      height: 57px;
+      margin-top: 15px;
+    }
     .img_step3 {
-      height: 24px;
+      height: 22px;
     }
     .img_step4 {
-      height: 37px;
+      height: 33px;
     }
+
     #uploadBtn {
+      width: 200px;
+      height: 50.098px;
+      font-size: 17px;
       margin: -30px 0px 50px 0;
     }
-    .howuse-text {
-      font-size: 30px;
+
+    .btn-text {
+      margin-right: 35px;
+      font-weight: 700;
+    }
+    .uploadBtn img {
+      position: absolute;
+      padding-left: 10px;
+      padding-top: 1.9px;
+      width: 33px;
+    }
+    .notice {
+      height: 330px;
     }
     .notice-sub-text {
-      font-size: 15px;
+      font-size: 11px;
+      margin-bottom: 58px;
     }
     .notice-text {
       font-size: 30px;
     }
     .notice-sub-text li {
-      line-height: 30px;
+      line-height: 25px;
     }
   }
 }
