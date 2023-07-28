@@ -1,0 +1,180 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+.pretendard-font {
+  font-family: "Pretendard";
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+.navbar {
+  padding: 50px 0 50px 0;
+}
+/* howUse*/
+
+.howUse {
+  background-color: #f9fafb;
+  height: 632px;
+}
+.howuse-text {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 24px 12px 50px 12px;
+}
+.uploadBox {
+  border: 1px solid #999ea4;
+  border-radius: 10px;
+  width: 226px;
+  height: 229.73px;
+  background: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.step {
+  height: 158px;
+  margin-top: -8px;
+}
+.step-sub-title {
+  font-size: 12px;
+}
+
+.step > p {
+  margin-top: 19.39px;
+}
+.img_step1 {
+  height: 115px;
+  margin-top: -9px;
+}
+.img_step2 {
+  margin-top: 7px;
+}
+.img_step3 {
+  margin-top: 30px;
+  height: 31px;
+}
+.img_step4 {
+  margin-top: 30px;
+}
+hr {
+  margin: 0px;
+}
+
+#input {
+  visibility: hidden;
+}
+#uploadBtn {
+  text-decoration-line: none;
+  color: white;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid #5ab0ff;
+  background: #2579f1;
+  width: 284px;
+  height: 60.098px;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.btn-text {
+  margin-right: 35px;
+  font-weight: 700;
+}
+.uploadBtn img {
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 4.5px;
+}
+
+/* notice */
+.notice {
+  height: 411px;
+  background-color: #ffffff;
+}
+.notice-text {
+  padding: 24px 12px 0 12px;
+  font-size: 40px;
+  font-weight: 800;
+}
+.notice-sub-text {
+  font-size: 20px;
+}
+.notice-sub-text li {
+  line-height: 35px;
+}
+
+/* Upload 화면 모바일 반응형 CSS */
+@media (max-width: 1199.98px) {
+  .howUse {
+    height: auto;
+  }
+  .notice {
+    height: auto;
+  }
+  .uploadBox {
+    background: #fff;
+    margin-bottom: 48px;
+  }
+
+  #uploadBtn {
+    margin: 0px 0px 90px 0;
+  }
+  .notice-sub-text {
+    font-size: 18px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .howUse {
+      height: auto;
+    }
+
+    #uploadBtn {
+      margin: 10px 0px 50px 0;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .howUse {
+      height: auto;
+    }
+
+    #uploadBtn {
+      margin: -30px 0px 50px 0;
+    }
+    .notice-sub-text {
+      font-size: 16px;
+    }
+    .notice-sub-text li {
+      line-height: 30px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .howUse {
+      height: auto;
+    }
+    .uploadBox {
+      border: 1px solid #999ea4;
+      border-radius: 10px;
+    }
+
+    .img_step3 {
+      height: 24px;
+    }
+    .img_step4 {
+      height: 37px;
+    }
+    #uploadBtn {
+      margin: -30px 0px 50px 0;
+    }
+    .howuse-text {
+      font-size: 30px;
+    }
+    .notice-sub-text {
+      font-size: 15px;
+    }
+    .notice-text {
+      font-size: 30px;
+    }
+    .notice-sub-text li {
+      line-height: 30px;
+    }
+  }
+}
