@@ -107,21 +107,21 @@ ul {
 
 /* 미수강과목 */
 
-th,
-td {
+.tableTitle th,
+.tableTitle td {
     display: inline-block;
     padding: 10px;
 }
 
-tr {
+.tableTitle tr {
     border-bottom: 1px solid rgb(95, 95, 95, 0.5);
 }
 
-tbody tr:last-child {
+.tableTitle tbody tr:last-child {
     border: none;
 }
 
-tbody {
+.tableTitle tbody {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -131,7 +131,8 @@ thead {
     color: #5F5F5F;
 }
 
-table tr {
+.uncompletedCourses table tr,
+.RecommendedList table tr {
     display: flex;
     align-items: center;
     text-align: center;
@@ -235,4 +236,43 @@ table {
     text-decoration: underline;
     font-size: 12px;
     color: #7B7B7B;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-score {
+    border-top: 2px solid black;
+}
+
+
+/* modal table */
+
+.modal-table {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.modal-table tr {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.modal-table tr td:nth-child(2),
+.modal-table tr th:nth-child(2) {
+    width: 160px;
+}
+
+.modal-table tr td:nth-child(4),
+.modal-table tr th:nth-child(4),
+.modal-table tr td:nth-child(3),
+.modal-table tr th:nth-child(3) {
+    width: 30px;
+}
+
+.modal-thead {
+    color: #5F5F5F;
 }
