@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const msTable = document.querySelector('.modal-msTable');
 
     let mrarr = []; // 전필 데이터 저장할 배열
-    let msarr = []; // 전선 
+    let msarr = []; // 전선
     let grarr = []; // 교필
     let gsarr = []; // 교선
 
