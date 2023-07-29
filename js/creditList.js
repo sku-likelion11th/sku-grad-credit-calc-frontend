@@ -71,6 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
         renderData(grarr, grTable);
         renderData(gsarr, gsTable);
     }
-
+    
     main();
 })
