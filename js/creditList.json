@@ -2,7 +2,7 @@
         "category": "교필",
         "subject": "기초글쓰기",
         "score": 3,
-        "grade": "C+",
+        "grade": "A+",
         "year": 2020,
         "semester": "1학기"
     }, {
@@ -17,7 +17,7 @@
         "category": "교필",
         "subject": "현대인과기독교",
         "score": "3",
-        "grade": "C",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -25,7 +25,7 @@
         "category": "교필",
         "subject": "현대인과성경",
         "score": "3",
-        "grade": "D",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -33,7 +33,7 @@
         "category": "교필",
         "subject": "사회봉사",
         "score": "3",
-        "grade": "E",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -41,7 +41,7 @@
         "category": "교필",
         "subject": "영어커뮤니케이션(1)",
         "score": "3",
-        "grade": "B+",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -49,7 +49,7 @@
         "category": "교필",
         "subject": "영어커뮤니케이션(2)",
         "score": "3",
-        "grade": "C+",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -57,7 +57,7 @@
         "category": "교필",
         "subject": "파이데이아포럼",
         "score": "3",
-        "grade": "B+",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -65,7 +65,7 @@
         "category": "교필",
         "subject": "대학생활과진로",
         "score": "3",
-        "grade": "D",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -73,7 +73,7 @@
         "category": "교선",
         "subject": "실용영어문법",
         "score": "3",
-        "grade": "C",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -81,7 +81,7 @@
         "category": "교선",
         "subject": "대학물리학",
         "score": "3",
-        "grade": "C",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -89,7 +89,7 @@
         "category": "교선",
         "subject": "대학수학",
         "score": "3",
-        "grade": "CC",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -97,7 +97,7 @@
         "category": "교선",
         "subject": "채플",
         "score": "3",
-        "grade": "B+",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     },
@@ -105,7 +105,38 @@
         "category": "교선",
         "subject": "톡톡디자인씽킹과창업이야기",
         "score": "3",
-        "grade": "D+",
+        "grade": "F",
+        "year": 2023,
+        "semester": "1학기"
+    },
+    {
+        "category": "전필",
+        "subject": "채플",
+        "score": "3",
+        "grade": "F",
+        "year": 2023,
+        "semester": "1학기"
+    },
+    {
+        "category": "전필",
+        "subject": "톡톡디자인씽킹과창업이야기",
+        "score": "3",
+        "grade": "F",
+        "year": 2023,
+        "semester": "1학기"
+    }, {
+        "category": "전선",
+        "subject": "채플",
+        "score": "3",
+        "grade": "F",
+        "year": 2023,
+        "semester": "1학기"
+    },
+    {
+        "category": "전선",
+        "subject": "톡톡디자인씽킹과창업이야기",
+        "score": "3",
+        "grade": "F",
         "year": 2023,
         "semester": "1학기"
     }
