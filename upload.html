@@ -134,7 +134,7 @@
           </div>
         </div>
 
-        <div class="uploadBtn text-center">
+        <!-- <div class="uploadBtn text-center">
           <div><input id="input" type="file" /></div>
           <button id="uploadBtn" onclick="onClickUpload();">
             <div class="btn-text pretendard-font">
@@ -145,7 +145,22 @@
             </div>
           </button>
           <div><a href="./result.html">결과창 임시링크</a></div>
-        </div>
+        </div> -->
+        <form id="uploadForm" action="/your-upload-url/" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="uploadBtn text-center">
+            <div><input id="input" type="file" name="uploaded_file" style="display: none;" /></div>
+            <button id="uploadBtn" onclick="onClickUpload();">
+              <div class="btn-text pretendard-font">
+                엑셀 파일 업로드
+                <div class="uploadIcon">
+                  <img src="./source/img/upload_img/upload-arrow.png" />
+                </div>
+              </div>
+            </button>
+          </div>
+        </form>
+        
       </div>
     </section>
 
