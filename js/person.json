@@ -58,7 +58,7 @@
         "name": "나용성",
         "department": "컴퓨터공학과 18",
         "position": "아기사자",
-        "role": "아직 몰루",
+        "role": "배포",
         "class": "profile-design-2"
     },
     {
@@ -67,7 +67,7 @@
         "name": "박하영",
         "department": "산업경영공학과 20",
         "position": "아기사자",
-        "role": "아직 몰루",
+        "role": "DB설계/자료조사",
         "class": "profile-design-3"
     },
     {
@@ -76,7 +76,7 @@
         "name": "박지은",
         "department": "미디어소프트웨어학과 20",
         "position": "아기사자",
-        "role": "아직 몰루",
+        "role": "DB설계/자료조사",
         "class": "profile-design-4"
     },
     {
@@ -94,7 +94,7 @@
         "name": "김주미",
         "department": "미디어소프트웨어학과 21",
         "position": "아기사자",
-        "role": "아직몰루",
+        "role": "데이터 파싱",
         "class": "profile-design-1"
     },
     {
@@ -103,7 +103,7 @@
         "name": "한민규",
         "department": "컴퓨터공학과 21",
         "position": "아기사자",
-        "role": "아직몰루",
+        "role": "데이터 파싱",
         "class": "profile-design-2"
     }
 ]

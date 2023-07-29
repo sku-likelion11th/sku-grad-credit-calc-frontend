@@ -1,25 +1,25 @@
 [{
         "category": "전필",
-        "subject": "경영aaaaaaaaaaaaaaa과dffffff학",
+        "subject": "C프로그래밍",
         "score": "3학점"
     }, {
         "category": "전필",
-        "subject": "잘나오지??? ㅈㅂ",
+        "subject": "파이썬프로그래밍",
         "score": "3학점"
     },
     {
         "category": "전필",
-        "subject": "응아니야",
+        "subject": "앱프로그래밍",
         "score": "3학점"
     },
     {
         "category": "전필",
-        "subject": "굿  1페이지임",
+        "subject": "데이터베이스",
         "score": "3학점"
     },
     {
         "category": "전필",
-        "subject": "2페이지에 표시될것",
+        "subject": "게임수학",
         "score": "3학점"
     },
     {
@@ -33,17 +33,17 @@
         "score": "3학점"
     }, {
         "category": "전선",
-        "subject": "ㅎㅎㅎㅎ",
+        "subject": "자바웹프로그래밍(1)",
         "score": "3학점"
     },
     {
         "category": "전선",
-        "subject": "응아니야",
+        "subject": "자바웹프로그래밍(2)",
         "score": "3학점"
     },
     {
         "category": "전선",
-        "subject": "여기까지는 1페이지임",
+        "subject": "영상처리",
         "score": "3학점"
     },
     {
@@ -62,22 +62,22 @@
         "score": "3학점"
     }, {
         "category": "교필",
-        "subject": "ㅎㅎㅎㅎ",
+        "subject": "파이데이아포럼",
         "score": "3학점"
     },
     {
         "category": "교필",
-        "subject": "응아니야",
+        "subject": "기초글쓰기",
         "score": "3학점"
     },
     {
         "category": "교필",
-        "subject": "dfff",
+        "subject": "컴퓨팅사고와코딩기초",
         "score": "3학점"
     },
     {
         "category": "교필",
-        "subject": "하하하ㅏ하하 페이지~",
+        "subject": "현대인과기독교",
         "score": "3학점"
     },
     {

@@ -94,8 +94,8 @@
 	}
 }
 .profile-card > img {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 130px;
 }
 .maker-name{
     font-size: 22px;
