@@ -70,11 +70,6 @@ hr {
   right: 12px;
   bottom: 12px;
 }
-.img_step1 img {
-  width: 36%;
-  padding-top: 4px;
-  height: auto;
-}
 
 .img_step2 img,
 .img_step3 img,
@@ -82,8 +77,15 @@ hr {
   max-width: 90%;
   height: auto;
 }
+.img_step1 img {
+  width: 49%;
+  height: auto;
+}
+.img_step1 {
+  padding-bottom: 3px;
+}
 .img_step2 {
-  padding-top: 13px;
+  padding-top: 20px;
 }
 .img_step3 {
   padding-top: 38px;
@@ -116,11 +118,6 @@ hr {
   .uploadBox {
     margin-bottom: 48px;
   }
-  .img_step1 img {
-    width: 53%;
-    padding-top: 4px;
-    height: auto;
-  }
 
   #uploadBtn {
     margin: 0px 0px 40px 0;
@@ -131,10 +128,8 @@ hr {
   .notice-sub-text {
     font-size: 18px;
   }
-}
-@media (min-width: 1194px) and (max-width: 1405px) {
   .img_step1 img {
-    width: 44%;
+    width: 65%;
   }
 }
 
@@ -145,28 +140,22 @@ hr {
   #uploadBtn {
     margin: 10px 0px 50px 0;
   }
-  .img_step1 img {
-    width: 32%;
-    padding-top: 4px;
-    height: auto;
-  }
-
   .notice {
     height: 411px;
   }
+  .img_step1 img {
+    width: 43%;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 767.98px) {
+@media and (max-width: 767.98px) {
   .howUse {
     height: auto;
   }
   #uploadBtn {
     margin: -30px 0px 50px 0;
   }
-  .img_step1 img {
-    width: 45%;
-    height: auto;
-  }
+
   .notice-sub-text {
     font-size: 16px;
   }
@@ -174,7 +163,7 @@ hr {
     line-height: 30px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 550.98px) {
   .howUse {
     height: auto;
   }
@@ -206,8 +195,7 @@ hr {
     bottom: 12px;
   }
   .img_step1 img {
-    width: 58%;
-    padding-top: 10px;
+    margin-top: 10px;
   }
   .notice {
     height: 330px;
